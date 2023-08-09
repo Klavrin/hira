@@ -1,0 +1,19 @@
+{
+  "name": "hira",
+  "description": "Practice hiragana in your terminal.",
+  "main": "./main.js",
+  "author": "Sergiu Gherasim",
+  "license": "ISC",
+  "bin": {
+    "hira": "./main.js"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "prompts": "^2.4.2"
+  },
+  "type": "module",
+  "files": [
+    "resources/hiragana.json"
+  ]
+}
