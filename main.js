@@ -6,16 +6,18 @@ import getRandomNumber from './lib/get-random-number.js'
 import outputToConsole from './lib/output-to-console.js'
 
 const __filename = fileURLToPath(import.meta.url)
+const flag = process.argv.includes('-kana')
+const pickJsonFile = flag ? '../resources/katakana.json' : '../resources/hiragana.json'
 
 async function getCharacters() {
   try {
     while (true) {
-      const joinPath = path.join(__filename, '../resources/hiragana.json')
+      const joinPath = path.join(__filename, pickJsonFile)
       const getJSON = await fs.readFile(joinPath, 'utf-8')
-      const hiragana = await JSON.parse(getJSON)
-      const character = hiragana[getRandomNumber(hiragana.length)]
+      const kana = await JSON.parse(getJSON)
+      const character = kana[getRandomNumber(kana.length)]
 
-      await outputToConsole(character.hiragana, character.romaji)
+      await outputToConsole(character.char, character.romaji)
     }
   } catch (err) {
     throw err
