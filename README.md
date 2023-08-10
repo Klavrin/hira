@@ -1,6 +1,6 @@
 # hira - practice hiragana and katakana in your terminal
 
-[![npm package](https://img.shields.io/badge/hira-github-red)](https://github.com/Klavrin/hira)
+[![npm package](https://img.shields.io/badge/hira-npm-red)](https://www.npmjs.com/package/hira)
 
 ### Installation
 
