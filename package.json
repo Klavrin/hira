@@ -7,7 +7,7 @@
   "bin": {
     "hira": "./main.js"
   },
-  "version": "1.1.1",
+  "version": "1.1.2",
   "dependencies": {
     "chalk": "^5.3.0",
     "prompts": "^2.4.2",
@@ -24,6 +24,8 @@
   ],
   "type": "module",
   "files": [
-    "resources/hiragana.json"
+    "resources/hiragana.json",
+    "lib/get-random-number.js",
+    "lib/output-to-console.js"
   ]
 }
